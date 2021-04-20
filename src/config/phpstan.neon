@@ -1,0 +1,7 @@
+includes:
+
+parameters:
+    tmpDir:
+        ../var/cache/phpstan
+    parallel:
+        processTimeout: 120.0
