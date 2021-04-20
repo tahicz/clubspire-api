@@ -1,0 +1,30 @@
+{
+    "name": "tahicz/clubspire-api",
+    "description": "PHP api for Clubspire system",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jan Mlatec",
+            "email": "tahicz@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2.24"
+        },
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Clubspire\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.2"
+    }
+}
