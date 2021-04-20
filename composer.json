@@ -23,8 +23,20 @@
             "Clubspire\\": "src"
         }
     },
+    "scripts": {
+        "phpcs": "vendor/bin/phpcs --standard=vendor/slevomat/coding-standard",
+        "phpcs:diff": "vendor/bin/phpcs --standard=vendor/slevomat/coding-standard --report=diff",
+        "phpcs:source": "vendor/bin/phpcs --standard=vendor/slevomat/coding-standard --report=source",
+        "phpcs:summary": "vendor/bin/phpcs --standard=vendor/slevomat/coding-standard --report=summary",
+        "phpcs:fix": "vendor/bin/phpcbf --standard=vendor/slevomat/coding-standard",
+
+    },
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.2"
+    },
+    "require-dev": {
+        "slevomat/coding-standard": "^7.0",
+        "squizlabs/php_codesniffer": "^3.6"
     }
 }
